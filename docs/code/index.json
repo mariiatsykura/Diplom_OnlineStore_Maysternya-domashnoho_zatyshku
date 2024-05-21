@@ -1,0 +1,314 @@
+{
+  "sections": {
+    "slideshow_iYVdiz": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_zEzneQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_20.png",
+            "heading": "Майстерня домашнього затишку",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4380d761-f659-42b9-8ae5-f1a5039f79ef",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_bTR6i3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_22.png",
+            "heading": "Майстерня домашнього затишку",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4380d761-f659-42b9-8ae5-f1a5039f79ef",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_X8PcLx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_21.png",
+            "heading": "Майстерня домашнього затишку",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4380d761-f659-42b9-8ae5-f1a5039f79ef",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_zEzneQ",
+        "slide_bTR6i3",
+        "slide_X8PcLx"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"KyivTypeSerif\"; min-width: 800px; font-weight: 650; font-size: 75px; line-height: 80px; letter-spacing: 0.05em; margin-top: -30%; margin-left: 19%;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "custom_liquid_4bWVrL": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_wt4K7J": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".line {position: absolute; width: 158px; height: 0px; left: 600px; top: 1095px; margin-top: 40px; border: 1px solid #646f58;}",
+        "h2 {position: absolute; width: 556px; height: 67.23px; left: 810px; top: 1061px; font: 700 55px \"KyivTypeSerif\"; text-align: center; color: #646f58;}",
+        "img {position: absolute; width: 536px; height: 802.66px; left: 45px; top: 1014.63px; border-radius: 25px;}",
+        "p {position: absolute; width: 564px; height: 73.34px; left: 620px; top: 1184.74px; font: 350 20px \"KyivTypeSerif\"; color: #32292f;}",
+        "section {height: 400px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<style>\n  .container {\n    display: flex;\n  }\n\n  .column {\n    flex: 1;\n    padding: 0px;\n    border: 1px solid #ccc;\n  }\n\n  .featured-collection-image img {\n    max-width: 100%;\n    height: auto;\n  }\n<\/style>\n<\/head>\n<body>\n\n<section class=\"container\">\n  <div class=\"column\">\n    <div class=\"featured-collection-image\">\n      <img src=\"https:\/\/c.wallhere.com\/photos\/58\/33\/flowers_plants_baskets_outdoors-2050555.jpg!d\" alt=\"Обкладинка колекції\">\n    <\/div>\n  <\/div>\n   <div class=\"column\" child=flex center aliigh>\n    <div class=\"text-container\">\n      <h2>Липневий світанок<\/h2>\n      <div class=\"line\"><\/div>\n      <div class=\"featured-collection-info\">\n        <p>Нова колекція, що поринить вас у дитинство, наділить посмішкою та змусить вас відчувати себе спокійно та щасливо, де б ви не були<\/p>\n      <\/div>\n  <\/div>\n<\/section>\n<section class=\"container\">\n  <div class=\"column\">\n    {% assign product = section.settings.collection.products.first %}\n    {% if product %}\n      <div class=\"featured-collection-image\">\n        <img src=\"{{ product.featured_image.src | img_url: '600x' }}\" alt=\"{{ product.featured_image.alt }}\">\n      <\/div>\n    {% endif %}\n  <\/div>\n  <div class=\"column\">\n    {% assign product = section.settings.collection.products.first %}\n    {% if product %}\n      <div class=\"featured-collection-info\">\n        <h2>{{ product.title }}<\/h2>\n        <p>{{ product.description }}<\/p>\n      <\/div>\n    {% endif %}\n  <\/div>\n<div class=\"line\">\n<\/div>\n<div class=\"b\">\n<button style=\"box-sizing: border-box; position: absolute; width: 210px; height: 45.84px; left: 620px; top: 1314.1px; border: 1px solid #646F58; border-radius: 50px; font-family: 'KyivTypeSerif'; font-style: normal; font-weight: 500; font-size: 20px; line-height: 24px; color: #646F58; background-color: transparent; cursor: pointer;\">Перейти<\/button> <\/div>\n<\/section>\n<\/body>\n<\/html>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17155260892d1c2c49": {
+      "type": "apps",
+      "blocks": {
+        "shop_shop_login_button_app_block_Hgmfkd": {
+          "type": "shopify:\/\/apps\/shop\/blocks\/shop-login-button-app-block\/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "shop_shop_login_button_app_block_Hgmfkd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_EC8THL": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".collection {margin-top: -45%; margin-left: 55%;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "липневий-світанок",
+        "products_to_show": 7,
+        "columns_desktop": 2,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_anC4CN": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-family: \"KyivTypeSerif\"; font-weight: 700; font-size: 55px; line-height: 90px; letter-spacing: 0.03em; line-height: 66px; color: #646f58;}"
+      ],
+      "settings": {
+        "title": "Бестселлери",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 10,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_UhrQpz": {
+      "type": "multirow",
+      "blocks": {
+        "row_8caTdE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_33.png",
+            "caption": "",
+            "heading": "Мʼякий всесвіт",
+            "text": "<p>Незабутні відчуття затишку та комфорту переплітаються з ніжністю та теплотою, даруючи вам моменти найприємніших відчуттів. Проведіть час у цьому м'якому всесвіті та насолоджуйтеся кожним дотиком до наших найм'якших виробів<\/p>",
+            "button_label": "Переглянути колекцію",
+            "button_link": ""
+          }
+        },
+        "row_dD9yAa": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_31.png",
+            "caption": "",
+            "heading": "Акцент емоцій",
+            "text": "<p>Дозвольте емоціям керувати вашим простором з нашою колекцією 'Акцент емоцій'. Кожен предмет цієї колекції — це окрема нотка витонченості, що викликає неповторні відчуття. Поглиблюйтеся у мінімалістичний інтер'єр, де кожен дотик кожного елемента перетворює простір у мистецький шедевр.<\/p>",
+            "button_label": "Переглянути колекцію",
+            "button_link": ""
+          }
+        },
+        "row_73nt93": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_29.png",
+            "caption": "",
+            "heading": "Подих природи",
+            "text": "<p>Відчуйте природну красу та гармонію у кожному елементі нашої колекції, де природний стиль поєднується з естетикою сучасного дизайну. Дозвольте рослинам і природнім мотивам принести до вашого простору свіжість і життєву силу, занурившись у світ 'Подиху природи'.\"<\/p>",
+            "button_label": "Переглянути колекцію",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_8caTdE",
+        "row_dD9yAa",
+        "row_73nt93"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"KyivTypeSerif\"; font-weight: 500; font-size: 45px; line-height: 54px; letter-spacing: 0.03em; line-height: 66px; color: #646f58;}",
+        "p {font-style: normal; font-weight: 200; line-height: 22px; color: #1f1410; max-width: 650px;}",
+        ".isolate {margin-bottom: 20px; border: 1px solid rgba(100, 111, 88, 0.7); padding-left: 20px; margin-left: -5%; margin-right: -5%; padding-top: 10px; padding-bottom: 10px; border-radius: 25px;}"
+      ],
+      "settings": {
+        "image_height": "small",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "newsletter_jxNNd7": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_H7rV8e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Будьте в курсі всіх новин та отримуйте ексклюзивні знижки!",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_LqDeEN": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Підпишіться на наші повідомлення, щоб стати першими, хто дізнається про нові товарита пропозиції, та отримайте 20% знижки! <\/p>"
+          }
+        },
+        "email_form_Hfkf4V": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_H7rV8e",
+        "paragraph_LqDeEN",
+        "email_form_Hfkf4V"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"KyivTypeSerif\"; font-size: 45px; min-width: 500px; max-width: 700px; letter-spacing: 0.02em; color: #646f58; padding-left: 10px; color: #646f58; text-align: left;}",
+        "p {padding-left: 25px; text-align: left;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_iaGwH7": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".text1,.text2 {color: #1f1410;}",
+        ".text1 {width: 480px; height: 90px; left: 489px; margin-left: -7%; margin-top: 9%;}",
+        ".text2 {width: 500px; height: 120px; margin-left: 10%;}",
+        ".button-container {width: 210px; height: 45px; margin-left: -7%;}",
+        ".button-container button {width: 210px; height: 45px; border: 1px solid #646f58; border-radius: 50px; font: 500 \"Kyiv*Type Serif\", serif; text-align: center; color: #646f58;}",
+        "div {border: 0px;}",
+        "h2,img {margin-left: 45px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<style>\n  .container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: between; \n  }\n\n  .column {\n    flex-basis: calc(50% - 10px); \n    margin-bottom: 20px; \/* Відступ між рядками *\/\n  }\n\n  .featured-collection-image img {\n    max-width: 100%;\n    height: auto;\n    display: block;\n    margin-bottom: 20px; \/* Відступ між зображенням та наступним контентом *\/\n  }\n\n  .text-container {\n    margin-bottom: 20px; \n  }\n\n  .button-container {\n    width: 100%;\n  }\n\n  .button-container button {\n    width: 100%;\n    border: 1px solid #646F58;\n    border-radius: 50px;\n    font-family: 'KyivTypeSerif';\n    font-style: normal;\n    font-weight: 500;\n    font-size: 20px;\n    line-height: 24px;\n    color: #646F58;\n    background-color: transparent;\n    cursor: pointer;\n  }\n<\/style>\n<\/head>\n<body>\n<h2 style=\"\n  font-family: 'KyivTypeSerif';\n  font-size: 45px;\n  letter-spacing: 0.02em;\n  color: #646f58;\n  font-weight: 600;\n  padding-left: 10px;\n  text-align: left;\n\">Подарункові набори<\/h2>\n\n\n<section class=\"container\">\n  <div class=\"column\">\n    <div class=\"featured-collection-image\">\n      <img src=\"\/\/3fc746-32.myshopify.com\/cdn\/shop\/files\/image_40.png\" alt=\"Обкладинка колекції\">\n    <\/div>\n  <\/div>\n\n  <div class=\"column\">\n    <div class=\"text-container\">\n      <p class=\"text1\">Вишукані бокси, створені з любов'ю та увагою до деталей, стануть ідеальним подарунком для будь-якої нагоди.<\/p>\n      <p class=\"text2\">Незалежно від того, чи це святковий подарунок для близької людини, чи просто знак уваги для колеги або друга, наші подарункові набори зроблять цю подію незабутньою.<\/p>\n    <\/div>\n\n    <div class=\"button-container\">\n      <button>Перейти<\/button>\n    <\/div>\n  <\/div>\n<\/section>\n\n<\/body>\n<\/html>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow_iYVdiz",
+    "custom_liquid_4bWVrL",
+    "custom_liquid_wt4K7J",
+    "17155260892d1c2c49",
+    "featured_collection_EC8THL",
+    "featured_collection_anC4CN",
+    "multirow_UhrQpz",
+    "newsletter_jxNNd7",
+    "custom_liquid_iaGwH7"
+  ]
+}
